@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:personal_protfolio_app/personal_info.dart';
+import 'package:personal_protfolio_app/skill_info.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -114,7 +115,7 @@ class Home extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => PersonalInfo()),
+                      MaterialPageRoute(builder: (context) => SkillInfo()),
                     );
                     Fluttertoast.showToast(msg: "This is Skills Info Page");
                   },
