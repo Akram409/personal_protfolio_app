@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
       body: Center(
         child: Container(
           width: 550,
-          height: 550,
+          height: 590,
           padding: EdgeInsets.all(30),
           decoration: BoxDecoration(
               shape: BoxShape.rectangle,
@@ -69,31 +69,43 @@ class Home extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 50),
+                // icon use here
                 OutlinedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PersonalInfo()));
+                      context,
+                      MaterialPageRoute(builder: (context) => PersonalInfo()),
+                    );
                     Fluttertoast.showToast(msg: "This is Personal Info Page");
                   },
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
-                        width: 2.0,
-                        color: Colors.blue), // Change the color here
+                      width: 2.0,
+                      color: Colors.blue, // Change the color here
+                    ),
                   ),
                   child: Container(
                     width: 300,
                     height: 50,
-                    child: Center(
-                      child: Text(
-                        "Personal Info",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22,
+                    child: Row(
+                      mainAxisAlignment:
+                          MainAxisAlignment.center, // Center the content
+                      children: [
+                        Icon(
+                          Icons.perm_identity, // Choose any icon you like
+                          color: Colors.black, // Icon color
+                          size: 24, // Icon size
                         ),
-                      ),
+                        SizedBox(width: 10), // Spacing between icon and text
+                        Text(
+                          "Personal Info",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -101,28 +113,39 @@ class Home extends StatelessWidget {
                 OutlinedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PersonalInfo()));
+                      context,
+                      MaterialPageRoute(builder: (context) => PersonalInfo()),
+                    );
                     Fluttertoast.showToast(msg: "This is Skills Info Page");
                   },
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
-                        width: 2.0,
-                        color: Colors.blue), // Change the color here
+                      width: 2.0,
+                      color: Colors.blue, // Change the color here
+                    ),
                   ),
                   child: Container(
                     width: 300,
                     height: 50,
-                    child: Center(
-                      child: Text(
-                        "Skills",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22,
+                    child: Row(
+                      mainAxisAlignment:
+                          MainAxisAlignment.center, // Center the content
+                      children: [
+                        Icon(
+                          Icons.hub_outlined, // Icon for Skills
+                          color: Colors.black, // Icon color
+                          size: 24, // Icon size
                         ),
-                      ),
+                        SizedBox(width: 10), // Spacing between icon and text
+                        Text(
+                          "Skills",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -130,28 +153,39 @@ class Home extends StatelessWidget {
                 OutlinedButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PersonalInfo()));
+                      context,
+                      MaterialPageRoute(builder: (context) => PersonalInfo()),
+                    );
                     Fluttertoast.showToast(msg: "This is Education Info Page");
                   },
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
-                        width: 2.0,
-                        color: Colors.blue), // Change the color here
+                      width: 2.0,
+                      color: Colors.blue, // Change the color here
+                    ),
                   ),
                   child: Container(
                     width: 300,
                     height: 50,
-                    child: Center(
-                      child: Text(
-                        "Education",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22,
+                    child: Row(
+                      mainAxisAlignment:
+                          MainAxisAlignment.center, // Center the content
+                      children: [
+                        Icon(
+                          Icons.school, // Icon for Education
+                          color: Colors.black, // Icon color
+                          size: 24, // Icon size
                         ),
-                      ),
+                        SizedBox(width: 10), // Spacing between icon and text
+                        Text(
+                          "Education",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -173,13 +207,24 @@ class Home extends StatelessWidget {
                     width: 300,
                     height: 50,
                     child: Center(
-                      child: Text(
-                        "Experience",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22,
-                        ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.workspace_premium_outlined, // Icon for Experience
+                            color: Colors.black, // Icon color
+                            size: 24, // Icon size
+                          ),
+                          SizedBox(width: 10),
+                          Text(
+                            "Experience",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 22,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
