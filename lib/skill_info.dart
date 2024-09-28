@@ -136,7 +136,7 @@ class SkillInfo extends StatelessWidget {
                               width: 150,
                               decoration: BoxDecoration(
                                   border:
-                                  Border.all(width: 2, color: Colors.blue),
+                                      Border.all(width: 2, color: Colors.blue),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Center(
                                 // Center the icon within the container
@@ -155,7 +155,7 @@ class SkillInfo extends StatelessWidget {
                               width: 150,
                               decoration: BoxDecoration(
                                   border:
-                                  Border.all(width: 2, color: Colors.blue),
+                                      Border.all(width: 2, color: Colors.blue),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Center(
                                 // Center the icon within the container
@@ -174,15 +174,14 @@ class SkillInfo extends StatelessWidget {
                               width: 150,
                               decoration: BoxDecoration(
                                   border:
-                                  Border.all(width: 2, color: Colors.blue),
+                                      Border.all(width: 2, color: Colors.blue),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Center(
                                 // Center the icon within the container
                                 child: Icon(
                                   FontAwesomeIcons.html5,
                                   size: 100,
-                                  color: Colors.red
-                                  , // Color for the icon
+                                  color: Colors.red, // Color for the icon
                                 ),
                               ),
                             ),
@@ -194,14 +193,15 @@ class SkillInfo extends StatelessWidget {
                               width: 150,
                               decoration: BoxDecoration(
                                   border:
-                                  Border.all(width: 2, color: Colors.blue),
+                                      Border.all(width: 2, color: Colors.blue),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Center(
                                 // Center the icon within the container
                                 child: Icon(
                                   FontAwesomeIcons.css3,
                                   size: 100,
-                                  color: Colors.lightBlueAccent, // Color for the icon
+                                  color: Colors
+                                      .lightBlueAccent, // Color for the icon
                                 ),
                               ),
                             ),
@@ -213,7 +213,7 @@ class SkillInfo extends StatelessWidget {
                               width: 150,
                               decoration: BoxDecoration(
                                   border:
-                                  Border.all(width: 2, color: Colors.blue),
+                                      Border.all(width: 2, color: Colors.blue),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Center(
                                 // Center the icon within the container
@@ -232,14 +232,15 @@ class SkillInfo extends StatelessWidget {
                               width: 150,
                               decoration: BoxDecoration(
                                   border:
-                                  Border.all(width: 2, color: Colors.blue),
+                                      Border.all(width: 2, color: Colors.blue),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Center(
                                 // Center the icon within the container
                                 child: Icon(
                                   FontAwesomeIcons.fire,
                                   size: 100,
-                                  color: Colors.yellowAccent, // Color for the icon
+                                  color:
+                                      Colors.yellowAccent, // Color for the icon
                                 ),
                               ),
                             ),
@@ -251,7 +252,7 @@ class SkillInfo extends StatelessWidget {
                               width: 150,
                               decoration: BoxDecoration(
                                   border:
-                                  Border.all(width: 2, color: Colors.blue),
+                                      Border.all(width: 2, color: Colors.blue),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Center(
                                 // Center the icon within the container
@@ -269,183 +270,98 @@ class SkillInfo extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 20),
-                // Column(
-                //   crossAxisAlignment: CrossAxisAlignment.center,
-                //   children: <Widget>[
-                //     Text(
-                //       "Confortable",
-                //       style: TextStyle(
-                //           color: Color(0xFFC770F0),
-                //           fontWeight: FontWeight.w900,
-                //           fontSize: 28),
-                //     ),
-                //     SizedBox(
-                //       height: 15,
-                //     ),
-                //     SingleChildScrollView(
-                //       scrollDirection: Axis.horizontal,
-                //       child: Row(
-                //         mainAxisAlignment: MainAxisAlignment.start,
-                //         children: <Widget>[
-                //           Container(
-                //             margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                //             child: Container(
-                //               height: 150,
-                //               width: 150,
-                //               decoration: BoxDecoration(
-                //                   border:
-                //                   Border.all(width: 2, color: Colors.blue),
-                //                   borderRadius: BorderRadius.circular(20)),
-                //               child: Center(
-                //                 // Center the icon within the container
-                //                 child: Icon(
-                //                   FontAwesomeIcons.squareJs,
-                //                   size: 100,
-                //                   color: Colors.blue, // Color for the icon
-                //                 ),
-                //               ),
-                //             ),
-                //           ),
-                //           Container(
-                //             margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                //             child: Container(
-                //               height: 150,
-                //               width: 150,
-                //               decoration: BoxDecoration(
-                //                   border:
-                //                   Border.all(width: 2, color: Colors.blue),
-                //                   borderRadius: BorderRadius.circular(20)),
-                //               child: Center(
-                //                 // Center the icon within the container
-                //                 child: Icon(
-                //                   FontAwesomeIcons.js,
-                //                   size: 100,
-                //                   color: Colors.yellow, // Color for the icon
-                //                 ),
-                //               ),
-                //             ),
-                //           ),
-                //           Container(
-                //             margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                //             child: Container(
-                //               height: 150,
-                //               width: 150,
-                //               decoration: BoxDecoration(
-                //                   border:
-                //                   Border.all(width: 2, color: Colors.blue),
-                //                   borderRadius: BorderRadius.circular(20)),
-                //               child: Center(
-                //                 // Center the icon within the container
-                //                 child: Icon(
-                //                   FontAwesomeIcons.nodeJs,
-                //                   size: 100,
-                //                   color: Colors.green, // Color for the icon
-                //                 ),
-                //               ),
-                //             ),
-                //           ),
-                //           Container(
-                //             margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                //             child: Container(
-                //               height: 150,
-                //               width: 150,
-                //               decoration: BoxDecoration(
-                //                   border:
-                //                   Border.all(width: 2, color: Colors.blue),
-                //                   borderRadius: BorderRadius.circular(20)),
-                //               child: Center(
-                //                 // Center the icon within the container
-                //                 child: Icon(
-                //                   FontAwesomeIcons.html5,
-                //                   size: 100,
-                //                   color: Colors.red
-                //                   , // Color for the icon
-                //                 ),
-                //               ),
-                //             ),
-                //           ),
-                //           Container(
-                //             margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                //             child: Container(
-                //               height: 150,
-                //               width: 150,
-                //               decoration: BoxDecoration(
-                //                   border:
-                //                   Border.all(width: 2, color: Colors.blue),
-                //                   borderRadius: BorderRadius.circular(20)),
-                //               child: Center(
-                //                 // Center the icon within the container
-                //                 child: Icon(
-                //                   FontAwesomeIcons.css3,
-                //                   size: 100,
-                //                   color: Colors.lightBlueAccent, // Color for the icon
-                //                 ),
-                //               ),
-                //             ),
-                //           ),
-                //           Container(
-                //             margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                //             child: Container(
-                //               height: 150,
-                //               width: 150,
-                //               decoration: BoxDecoration(
-                //                   border:
-                //                   Border.all(width: 2, color: Colors.blue),
-                //                   borderRadius: BorderRadius.circular(20)),
-                //               child: Center(
-                //                 // Center the icon within the container
-                //                 child: Icon(
-                //                   FontAwesomeIcons.bootstrap,
-                //                   size: 100,
-                //                   color: Colors.purple, // Color for the icon
-                //                 ),
-                //               ),
-                //             ),
-                //           ),
-                //           Container(
-                //             margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                //             child: Container(
-                //               height: 150,
-                //               width: 150,
-                //               decoration: BoxDecoration(
-                //                   border:
-                //                   Border.all(width: 2, color: Colors.blue),
-                //                   borderRadius: BorderRadius.circular(20)),
-                //               child: Center(
-                //                 // Center the icon within the container
-                //                 child: Icon(
-                //                   FontAwesomeIcons.fire,
-                //                   size: 100,
-                //                   color: Colors.yellowAccent, // Color for the icon
-                //                 ),
-                //               ),
-                //             ),
-                //           ),
-                //           Container(
-                //             margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                //             child: Container(
-                //               height: 150,
-                //               width: 150,
-                //               decoration: BoxDecoration(
-                //                   border:
-                //                   Border.all(width: 2, color: Colors.blue),
-                //                   borderRadius: BorderRadius.circular(20)),
-                //               child: Center(
-                //                 // Center the icon within the container
-                //                 child: Icon(
-                //                   FontAwesomeIcons.wind,
-                //                   size: 100,
-                //                   color: Colors.lightBlue, // Color for the icon
-                //                 ),
-                //               ),
-                //             ),
-                //           ),
-                //         ],
-                //       ),
-                //     ),
-                //   ],
-                // ),
-                // SizedBox(height: 20),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      "Confortable",
+                      style: TextStyle(
+                          color: Color(0xFFC770F0),
+                          fontWeight: FontWeight.w900,
+                          fontSize: 28),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
+                            margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                            height: 150,
+                            width: 150,
+                            padding: EdgeInsets.all(22),
+                            decoration: BoxDecoration(
+                                border:
+                                Border.all(width: 2, color: Colors.blue),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: Image.asset(
+                                "Assets/images/nextjs.png",
+                                fit: BoxFit.contain,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                            height: 150,
+                            width: 150,
+                            padding: EdgeInsets.all(22),
+                            decoration: BoxDecoration(
+                                border:
+                                Border.all(width: 2, color: Colors.blue),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: Image.asset(
+                                "Assets/images/api.png",
+                                fit: BoxFit.contain,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                            height: 150,
+                            width: 150,
+                            padding: EdgeInsets.all(22),
+                            decoration: BoxDecoration(
+                                border:
+                                Border.all(width: 2, color: Colors.blue),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: Image.asset(
+                                "Assets/images/express.png",
+                                fit: BoxFit.contain,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                            height: 150,
+                            width: 150,
+                            padding: EdgeInsets.all(22),
+                            decoration: BoxDecoration(
+                                border:
+                                Border.all(width: 2, color: Colors.blue),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: Image.asset(
+                                "Assets/images/json.png",
+                                fit: BoxFit.contain,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 20),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
@@ -471,7 +387,7 @@ class SkillInfo extends StatelessWidget {
                               width: 150,
                               decoration: BoxDecoration(
                                   border:
-                                  Border.all(width: 2, color: Colors.blue),
+                                      Border.all(width: 2, color: Colors.blue),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Center(
                                 // Center the icon within the container
@@ -490,7 +406,7 @@ class SkillInfo extends StatelessWidget {
                               width: 150,
                               decoration: BoxDecoration(
                                   border:
-                                  Border.all(width: 2, color: Colors.blue),
+                                      Border.all(width: 2, color: Colors.blue),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Center(
                                 // Center the icon within the container
@@ -499,6 +415,57 @@ class SkillInfo extends StatelessWidget {
                                   size: 100,
                                   color: Colors.redAccent, // Color for the icon
                                 ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                            height: 150,
+                            width: 150,
+                            padding: EdgeInsets.all(22),
+                            decoration: BoxDecoration(
+                                border:
+                                    Border.all(width: 2, color: Colors.blue),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: Image.asset(
+                                "Assets/images/vscode.png",
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                            height: 150,
+                            width: 150,
+                            padding: EdgeInsets.all(22),
+                            decoration: BoxDecoration(
+                                border:
+                                Border.all(width: 2, color: Colors.blue),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: Image.asset(
+                                "Assets/images/netlify.png",
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                            height: 150,
+                            width: 150,
+                            padding: EdgeInsets.all(22),
+                            decoration: BoxDecoration(
+                                border:
+                                Border.all(width: 2, color: Colors.blue),
+                                borderRadius: BorderRadius.circular(20)),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: Image.asset(
+                                "Assets/images/vercel.png",
+                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
