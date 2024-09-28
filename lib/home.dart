@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:personal_protfolio_app/education_info.dart';
+import 'package:personal_protfolio_app/experience_info.dart';
 import 'package:personal_protfolio_app/personal_info.dart';
 import 'package:personal_protfolio_app/skill_info.dart';
 
@@ -155,7 +157,7 @@ class Home extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => PersonalInfo()),
+                      MaterialPageRoute(builder: (context) => EducationInfo()),
                     );
                     Fluttertoast.showToast(msg: "This is Education Info Page");
                   },
@@ -196,7 +198,7 @@ class Home extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => PersonalInfo()));
+                            builder: (context) => ExperienceInfo()));
                     Fluttertoast.showToast(msg: "This is Experience Info Page");
                   },
                   style: OutlinedButton.styleFrom(
