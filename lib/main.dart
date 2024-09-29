@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:personal_protfolio_app/welcome.dart';
+import 'package:personal_protfolio_app/welcome_home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        useMaterial3: false,
       ),
-      home: Welcome(),
+      home: WelcomeHome(),
     );
   }
 }
