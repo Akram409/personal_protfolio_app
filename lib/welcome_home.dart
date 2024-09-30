@@ -18,6 +18,7 @@ class WelcomeHome extends StatelessWidget {
         child: Column(
           // crossAxisAlignment: CrossAxisAlignment.,
           children: <Widget>[
+            // Hero Container
             Container(
               height: 642,
               decoration: BoxDecoration(
@@ -97,12 +98,14 @@ class WelcomeHome extends StatelessWidget {
                 ),
               ),
             ),
+            // Welcome Container
             Container(
-              height: 643,
+              height: 657,
+              // margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("Assets/images/background.jpg"),
-                  fit: BoxFit.fill,
+                  image: AssetImage("Assets/images/bg11.jpg"),
+                  fit: BoxFit.cover,
                 ),
               ),
               alignment: Alignment.center,
@@ -186,20 +189,21 @@ class WelcomeHome extends StatelessWidget {
                       size: 34,
                     ),
                     Icon(
-                      Icons.arrow_downward_sharp,
+                      Icons.rocket_launch_outlined,
                       color: Colors.white,
-                      size: 44,
+                      size: 45,
                     ),
                   ],
                 ),
               ),
             ),
+            // Personal Container
             Container(
-              height: 643,
+              height: 657,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("Assets/images/background.jpg"),
-                  fit: BoxFit.fill,
+                  image: AssetImage("Assets/images/p4.jpg"),
+                  fit: BoxFit.cover,
                 ),
               ),
               alignment: Alignment.center,
@@ -208,10 +212,26 @@ class WelcomeHome extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    Icon(
-                      Icons.contact_mail_outlined,
-                      color: Colors.white,
-                      size: 100,
+                    ClipRRect(
+                      child: Container(
+                        padding: EdgeInsets.fromLTRB(5, 20, 5, 10),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.white,
+                            width: 4,
+                          ),
+                        ),
+                        child: ClipOval(
+                          child: Center(
+                            child: Icon(
+                              Icons.perm_identity,
+                              color: Colors.white,
+                              size: 100,
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
                     RichText(
                       text: TextSpan(
@@ -225,8 +245,7 @@ class WelcomeHome extends StatelessWidget {
                             ),
                           ),
                           TextSpan(
-                            text:
-                            "Information",
+                            text: "Information",
                             style: GoogleFonts.yatraOne(
                               color: Colors.greenAccent,
                               fontWeight: FontWeight.w700,
@@ -236,55 +255,47 @@ class WelcomeHome extends StatelessWidget {
                         ],
                       ),
                     ),
-                    OutlinedButton(
-                      onPressed: () {
+                    SizedBox(height: 5,),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    GestureDetector(
+                      onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => PersonalInfo()),
+                          MaterialPageRoute(builder: (context) => PersonalInfo()), // The page you want to redirect to
                         );
-                        Fluttertoast.showToast(msg: "Welcome To Portfolio");
+                        Fluttertoast.showToast(msg: "Welcome To Personal Info Page");
                       },
-                      style: OutlinedButton.styleFrom(
-                        side: BorderSide(
-                          width: 2.0,
-                          color: Colors.white,
-                        ),
-                      ),
-                      child: Container(
-                        width: 200,
-                        height: 50,
-                        child: Row(
-                          mainAxisAlignment:
-                          MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Click here.....",
-                              style: GoogleFonts.yatraOne(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 25,
-                              ),
-                            ),
-                            SizedBox(width: 10),
-                            Icon(
-                              Icons.arrow_circle_right_outlined,
-                              color: Colors.white,
-                              size: 25,
-                            ),
-                          ],
-                        ),
+                      child: Icon(
+                        Icons.rocket_launch_outlined, // Rocket icon that will trigger the navigation
+                        color: Colors.white,
+                        size: 45,
                       ),
                     ),
                   ],
                 ),
               ),
             ),
+            // Skills Container
             Container(
-              height: 643,
+              height: 657,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("Assets/images/background.jpg"),
-                  fit: BoxFit.fill,
+                  image: AssetImage("Assets/images/p2.jpg"),
+                  fit: BoxFit.cover,
                 ),
               ),
               alignment: Alignment.center,
@@ -294,22 +305,34 @@ class WelcomeHome extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(
-                          20.0), // Adjust the radius as needed
-                      child: Image.network(
-                        "https://i.ibb.co.com/4gHrtfG/brain-950x1024.png",
-                        height: 130,
-                        width: 130,
-                        color: Colors.white,
-                        fit: BoxFit.contain,
+                      child: Container(
+                        padding: EdgeInsets.fromLTRB(5, 20, 5, 10),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.white,
+                            width: 4,
+                          ),
+                        ),
+                        child: ClipOval(
+                          child: Center(
+                            child: Image.network(
+                              "https://i.ibb.co.com/4gHrtfG/brain-950x1024.png", // Replace with your image
+                              height: 100,
+                              width: 100,
+                              color: Colors.white,
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
                         children: [
                           TextSpan(
-                            text: "Ski",
+                            text: "Ski", // Changed from "Personal"
                             style: GoogleFonts.yatraOne(
                               color: Colors.white,
                               fontWeight: FontWeight.w700,
@@ -317,8 +340,7 @@ class WelcomeHome extends StatelessWidget {
                             ),
                           ),
                           TextSpan(
-                            text:
-                            "lls",
+                            text: "lls", // Changed from "Information"
                             style: GoogleFonts.yatraOne(
                               color: Colors.greenAccent,
                               fontWeight: FontWeight.w700,
@@ -328,55 +350,47 @@ class WelcomeHome extends StatelessWidget {
                         ],
                       ),
                     ),
-                    OutlinedButton(
-                      onPressed: () {
+                    SizedBox(height: 5),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    GestureDetector(
+                      onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => SkillInfo()),
+                          MaterialPageRoute(builder: (context) => SkillInfo()), // Navigate to SkillInfo page
                         );
-                        Fluttertoast.showToast(msg: "Welcome To Portfolio");
+                        Fluttertoast.showToast(msg: "Welcome To Skill Info Page");
                       },
-                      style: OutlinedButton.styleFrom(
-                        side: BorderSide(
-                          width: 2.0,
-                          color: Colors.white,
-                        ),
-                      ),
-                      child: Container(
-                        width: 200,
-                        height: 50,
-                        child: Row(
-                          mainAxisAlignment:
-                          MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Click here.....",
-                              style: GoogleFonts.yatraOne(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 25,
-                              ),
-                            ),
-                            SizedBox(width: 10),
-                            Icon(
-                              Icons.arrow_circle_right_outlined,
-                              color: Colors.white,
-                              size: 25,
-                            ),
-                          ],
-                        ),
+                      child: Icon(
+                        Icons.rocket_launch, // Rocket icon that will trigger the navigation
+                        color: Colors.white,
+                        size: 45,
                       ),
                     ),
                   ],
                 ),
               ),
             ),
+            // Education Container
             Container(
-              height: 643,
+              height: 657,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("Assets/images/background.jpg"),
-                  fit: BoxFit.fill,
+                  image: AssetImage("Assets/images/p3.jpg"),
+                  fit: BoxFit.cover,
                 ),
               ),
               alignment: Alignment.center,
@@ -388,15 +402,17 @@ class WelcomeHome extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(
                           20.0), // Adjust the radius as needed
-                      child: Image.network(
-                        "https://i.ibb.co.com/S0DScd3/education-school-1024x791.png",
-                        height: 130,
-                        width: 130,
-                        color: Colors.white,
-                        fit: BoxFit.contain,
+                      child: Center(
+                        child: Image.network(
+                          "https://i.ibb.co.com/S0DScd3/education-school-1024x791.png",
+                          height: 130,
+                          width: 130,
+                          color: Colors.white,
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
                         children: [
@@ -409,8 +425,7 @@ class WelcomeHome extends StatelessWidget {
                             ),
                           ),
                           TextSpan(
-                            text:
-                            "cations",
+                            text: "cations",
                             style: GoogleFonts.yatraOne(
                               color: Colors.greenAccent,
                               fontWeight: FontWeight.w700,
@@ -420,55 +435,47 @@ class WelcomeHome extends StatelessWidget {
                         ],
                       ),
                     ),
-                    OutlinedButton(
-                      onPressed: () {
+                    SizedBox(height: 5),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    GestureDetector(
+                      onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => EducationInfo()),
+                          MaterialPageRoute(builder: (context) => EducationInfo()), // Navigate to SkillInfo page
                         );
-                        Fluttertoast.showToast(msg: "Welcome To Portfolio");
+                        Fluttertoast.showToast(msg: "Welcome To Education Info Page");
                       },
-                      style: OutlinedButton.styleFrom(
-                        side: BorderSide(
-                          width: 2.0,
-                          color: Colors.white,
-                        ),
-                      ),
-                      child: Container(
-                        width: 200,
-                        height: 50,
-                        child: Row(
-                          mainAxisAlignment:
-                          MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Click here.....",
-                              style: GoogleFonts.yatraOne(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 25,
-                              ),
-                            ),
-                            SizedBox(width: 10),
-                            Icon(
-                              Icons.arrow_circle_right_outlined,
-                              color: Colors.white,
-                              size: 25,
-                            ),
-                          ],
-                        ),
+                      child: Icon(
+                        Icons.rocket_launch, // Rocket icon that will trigger the navigation
+                        color: Colors.white,
+                        size: 45,
                       ),
                     ),
                   ],
                 ),
               ),
             ),
+            // Experience Container
             Container(
-              height: 643,
+              height: 657,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("Assets/images/background.jpg"),
-                  fit: BoxFit.fill,
+                  image: AssetImage("Assets/images/p10.jpg"),
+                  fit: BoxFit.cover,
                 ),
               ),
               alignment: Alignment.center,
@@ -480,22 +487,22 @@ class WelcomeHome extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(
                           20.0), // Adjust the radius as needed
-                      child: Image.network(
-                        "https://i.ibb.co.com/80JzHgK/data-visualization-1024x1024.png",
-                        height: 130,
-                        width: 130,
-                        color: Colors.white,
-                        fit: BoxFit.contain,
+                      child: Center(
+                        child: Image.network(
+                          "https://i.ibb.co.com/80JzHgK/data-visualization-1024x1024.png",
+                          height: 130,
+                          width: 130,
+                          color: Colors.white,
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
+                    SizedBox(height: 10),
                     RichText(
                       text: TextSpan(
                         children: [
                           TextSpan(
-                            text: "Expe",
+                            text: "Experien",
                             style: GoogleFonts.yatraOne(
                               color: Colors.white,
                               fontWeight: FontWeight.w700,
@@ -503,7 +510,7 @@ class WelcomeHome extends StatelessWidget {
                             ),
                           ),
                           TextSpan(
-                            text: "rience",
+                            text: "ce",
                             style: GoogleFonts.yatraOne(
                               color: Colors.greenAccent,
                               fontWeight: FontWeight.w700,
@@ -513,49 +520,40 @@ class WelcomeHome extends StatelessWidget {
                         ],
                       ),
                     ),
-                    OutlinedButton(
-                      onPressed: () {
+                    SizedBox(height: 5),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      color: Colors.white,
+                      size: 34,
+                    ),
+                    GestureDetector(
+                      onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => ExperienceInfo()),
+                          MaterialPageRoute(builder: (context) => ExperienceInfo()), // Navigate to SkillInfo page
                         );
-                        Fluttertoast.showToast(msg: "Welcome To Portfolio");
+                        Fluttertoast.showToast(msg: "Welcome To Experience Info Page");
                       },
-                      style: OutlinedButton.styleFrom(
-                        side: BorderSide(
-                          width: 2.0,
-                          color: Colors.white,
-                        ),
-                      ),
-                      child: Container(
-                        width: 200,
-                        height: 50,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Click here.....",
-                              style: GoogleFonts.yatraOne(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 25,
-                              ),
-                            ),
-                            SizedBox(width: 10),
-                            Icon(
-                              Icons.arrow_circle_right_outlined,
-                              color: Colors.white,
-                              size: 25,
-                            ),
-                          ],
-                        ),
+                      child: Icon(
+                        Icons.rocket_launch, // Rocket icon that will trigger the navigation
+                        color: Colors.white,
+                        size: 45,
                       ),
                     ),
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
