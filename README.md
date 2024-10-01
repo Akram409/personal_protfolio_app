@@ -2,6 +2,12 @@
 
 This is my personal portfolio app built with Flutter. Below are some demo images of the app and a YouTube video demo.
 
+## Project GIF
+
+<div style="text-align: center;">
+  <img src="Assets/images/github/pog.gif" alt="Project GIF" width="400" height="645" />
+</div>
+
 ## Android App Demo
 
 ### Hero and Welcome Section
