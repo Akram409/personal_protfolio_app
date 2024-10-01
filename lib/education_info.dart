@@ -185,7 +185,7 @@ class EducationInfo extends StatelessWidget {
                             ),
                             children: <TextSpan>[
                               TextSpan(
-                                text: '4BM',
+                                text: '5BM',
                                 style: GoogleFonts.ebGaramond(
                                   fontWeight: FontWeight.normal,
                                 ),
