@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PersonalInfo extends StatelessWidget {
   const PersonalInfo({super.key});
@@ -8,13 +9,13 @@ class PersonalInfo extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          width: 550,
-          height: 590,
+          width: 400,
+          height: 645,
           padding: EdgeInsets.all(30),
           decoration: BoxDecoration(
-            shape: BoxShape.rectangle,
-            border: Border.all(width: 2, color: Colors.blue),
-            borderRadius: BorderRadius.circular(20),
+            // shape: BoxShape.rectangle,
+            // border: Border.all(width: 2, color: Colors.blue),
+            // borderRadius: BorderRadius.circular(20),
             color: Colors.white,
           ),
           child: SingleChildScrollView(
@@ -23,16 +24,16 @@ class PersonalInfo extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
                         child: Image.asset(
                           "Assets/images/profile.jpg",
-                          height: 150,
-                          width: 150,
+                          height: 130,
+                          width: 130,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -42,37 +43,23 @@ class PersonalInfo extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             "Akram Hossain",
-                            style: TextStyle(
+                            style: GoogleFonts.updock(
                                 fontSize: 40,
                                 fontWeight: FontWeight.bold,
-                                letterSpacing: 2),
-                          ),
-                          Text(
-                            "akramhossain.5204@gmail.com",
-                            style: TextStyle(
-                              fontSize: 17,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          Text(
-                            "+8801747130414",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
+                                letterSpacing: 4),
                           ),
                         ],
                       )
                     ],
                   ),
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 15),
                 RichText(
                   text: TextSpan(
                     children: [
                       TextSpan(
                         text: "Personal ",
-                        style: TextStyle(
+                        style: GoogleFonts.ebGaramond(
                           color: Colors.black,
                           fontWeight: FontWeight.w700,
                           fontSize: 35,
@@ -81,7 +68,7 @@ class PersonalInfo extends StatelessWidget {
                       TextSpan(
                         text:
                         "Info", // The word "Skillset" with different color
-                        style: TextStyle(
+                        style: GoogleFonts.ebGaramond(
                           color: Color(0xFFC770F0),
                           fontWeight: FontWeight.w700,
                           fontSize: 40,
@@ -102,8 +89,36 @@ class PersonalInfo extends StatelessWidget {
                   ),
                   child: RichText(
                     text: TextSpan(
+                      text: 'Date Of Birth: ',
+                      style: GoogleFonts.ebGaramond(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                        fontSize: 18,
+                      ),
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: '11/05/2002',
+                          style: GoogleFonts.ebGaramond(
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 1000,
+                  padding: EdgeInsets.all(15),
+                  margin: EdgeInsets.symmetric(vertical: 5),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    border:
+                    Border.all(width: 2, color: Color(0xFFE4D3A2)),
+                  ),
+                  child: RichText(
+                    text: TextSpan(
                       text: 'Address: ',
-                      style: TextStyle(
+                      style: GoogleFonts.ebGaramond(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                         fontSize: 18,
@@ -111,7 +126,7 @@ class PersonalInfo extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                           text: 'Chittagong, Bangladesh',
-                          style: TextStyle(
+                          style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),
                         ),
@@ -131,7 +146,7 @@ class PersonalInfo extends StatelessWidget {
                   child: RichText(
                     text: TextSpan(
                       text: 'Current Address: ',
-                      style: TextStyle(
+                      style: GoogleFonts.ebGaramond(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                         fontSize: 18,
@@ -139,7 +154,7 @@ class PersonalInfo extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                           text: 'Chawkbazar,Chittagong',
-                          style: TextStyle(
+                          style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),
                         ),
@@ -158,16 +173,46 @@ class PersonalInfo extends StatelessWidget {
                   ),
                   child: RichText(
                     text: TextSpan(
-                      text: 'Date Of Birth: ',
-                      style: TextStyle(
+                      text: 'Email:  ',
+                      style: GoogleFonts.ebGaramond(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                         fontSize: 18,
                       ),
                       children: <TextSpan>[
                         TextSpan(
-                          text: '11/05/2002',
-                          style: TextStyle(
+                          text: 'akramhossain.5204@gmail.com',
+                          style: GoogleFonts.ebGaramond(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.blueAccent,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 1000,
+                  padding: EdgeInsets.all(15),
+                  margin: EdgeInsets.symmetric(vertical: 5),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    border:
+                    Border.all(width: 2, color: Color(0xFFE4D3A2)),
+                  ),
+                  child: RichText(
+                    text: TextSpan(
+                      text: 'Phone: ',
+                      style: GoogleFonts.ebGaramond(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                        fontSize: 18,
+                      ),
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: '+8801747130414',
+                          style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),
                         ),
@@ -189,7 +234,7 @@ class PersonalInfo extends StatelessWidget {
                         child: RichText(
                           text: TextSpan(
                             text: 'Status: ',
-                            style: TextStyle(
+                            style: GoogleFonts.ebGaramond(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                               fontSize: 18,
@@ -197,7 +242,7 @@ class PersonalInfo extends StatelessWidget {
                             children: <TextSpan>[
                               TextSpan(
                                 text: 'Unmarried',
-                                style: TextStyle(
+                                style: GoogleFonts.ebGaramond(
                                   fontWeight: FontWeight.normal,
                                 ),
                               ),
@@ -219,7 +264,7 @@ class PersonalInfo extends StatelessWidget {
                         child: RichText(
                           text: TextSpan(
                             text: 'Position: ',
-                            style: TextStyle(
+                            style: GoogleFonts.ebGaramond(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                               fontSize: 18,
@@ -227,7 +272,7 @@ class PersonalInfo extends StatelessWidget {
                             children: <TextSpan>[
                               TextSpan(
                                 text: 'Student',
-                                style: TextStyle(
+                                style: GoogleFonts.ebGaramond(
                                   fontWeight: FontWeight.normal,
                                 ),
                               ),

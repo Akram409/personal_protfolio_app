@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class EducationInfo extends StatelessWidget {
   const EducationInfo({super.key});
@@ -8,13 +9,13 @@ class EducationInfo extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          width: 550,
-          height: 590,
+          width: 400,
+          height: 645,
           padding: EdgeInsets.all(30),
           decoration: BoxDecoration(
-            shape: BoxShape.rectangle,
-            border: Border.all(width: 2, color: Colors.blue),
-            borderRadius: BorderRadius.circular(20),
+            // shape: BoxShape.rectangle,
+            // border: Border.all(width: 2, color: Colors.blue),
+            // borderRadius: BorderRadius.circular(20),
             color: Colors.white,
           ),
           child: SingleChildScrollView(
@@ -23,16 +24,16 @@ class EducationInfo extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
                         child: Image.asset(
                           "Assets/images/profile.jpg",
-                          height: 150,
-                          width: 150,
+                          height: 130,
+                          width: 130,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -42,37 +43,23 @@ class EducationInfo extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             "Akram Hossain",
-                            style: TextStyle(
+                            style: GoogleFonts.updock(
                                 fontSize: 40,
                                 fontWeight: FontWeight.bold,
-                                letterSpacing: 2),
-                          ),
-                          Text(
-                            "akramhossain.5204@gmail.com",
-                            style: TextStyle(
-                              fontSize: 17,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          Text(
-                            "+8801747130414",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
+                                letterSpacing: 4),
                           ),
                         ],
                       )
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
+                SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     children: [
                       TextSpan(
-                        text: "U", // Text before "Skillset"
-                        style: TextStyle(
+                        text: "U", 
+                        style: GoogleFonts.ebGaramond(
                           color: Color(0xFFC770F0),
                           // Color for the first part
                           fontWeight: FontWeight.w700,
@@ -82,7 +69,7 @@ class EducationInfo extends StatelessWidget {
                       TextSpan(
                         text:
                         "niversity", // The word "Skillset" with different color
-                        style: TextStyle(
+                        style: GoogleFonts.ebGaramond(
                           color: Colors.black, // Color for "Skillset"
                           fontWeight: FontWeight.w700,
                           fontSize: 35,
@@ -95,7 +82,7 @@ class EducationInfo extends StatelessWidget {
                   width: 1000,
                   padding: EdgeInsets.all(20),
                   margin: EdgeInsets.symmetric(
-                      vertical: 5), // Spacing between boxes
+                      vertical: 5),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     border: Border.all(width: 2, color: Color(0xFFE4D3A2)),
@@ -103,7 +90,7 @@ class EducationInfo extends StatelessWidget {
                   child: RichText(
                     text: TextSpan(
                       text: 'University: ',
-                      style: TextStyle(
+                      style: GoogleFonts.ebGaramond(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                         fontSize: 18,
@@ -111,8 +98,9 @@ class EducationInfo extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                           text: 'International Islamic University Chittagong',
-                          style: TextStyle(
+                          style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
+                            color: Colors.blueAccent
                           ),
                         ),
                       ],
@@ -130,7 +118,7 @@ class EducationInfo extends StatelessWidget {
                   child: RichText(
                     text: TextSpan(
                       text: 'Degree: ',
-                      style: TextStyle(
+                      style: GoogleFonts.ebGaramond(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                         fontSize: 18,
@@ -138,7 +126,7 @@ class EducationInfo extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                           text: 'Bachelor of Science in Computer Science',
-                          style: TextStyle(
+                          style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),
                         ),
@@ -160,7 +148,7 @@ class EducationInfo extends StatelessWidget {
                         child: RichText(
                           text: TextSpan(
                             text: 'ID: ',
-                            style: TextStyle(
+                            style: GoogleFonts.ebGaramond(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                               fontSize: 18,
@@ -168,7 +156,7 @@ class EducationInfo extends StatelessWidget {
                             children: <TextSpan>[
                               TextSpan(
                                 text: 'C221161',
-                                style: TextStyle(
+                                style: GoogleFonts.ebGaramond(
                                   fontWeight: FontWeight.normal,
                                 ),
                               ),
@@ -190,7 +178,7 @@ class EducationInfo extends StatelessWidget {
                         child: RichText(
                           text: TextSpan(
                             text: 'Section: ',
-                            style: TextStyle(
+                            style: GoogleFonts.ebGaramond(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                               fontSize: 18,
@@ -198,7 +186,7 @@ class EducationInfo extends StatelessWidget {
                             children: <TextSpan>[
                               TextSpan(
                                 text: '4BM',
-                                style: TextStyle(
+                                style: GoogleFonts.ebGaramond(
                                   fontWeight: FontWeight.normal,
                                 ),
                               ),
@@ -220,7 +208,7 @@ class EducationInfo extends StatelessWidget {
                   child: RichText(
                     text: TextSpan(
                       text: 'Year of Graduation: ',
-                      style: TextStyle(
+                      style: GoogleFonts.ebGaramond(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                         fontSize: 18,
@@ -228,7 +216,7 @@ class EducationInfo extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                           text: '2024',
-                          style: TextStyle(
+                          style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),
                         ),
@@ -243,7 +231,7 @@ class EducationInfo extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: "C", // Text before "Skillset"
-                        style: TextStyle(
+                        style: GoogleFonts.ebGaramond(
                           color: Color(0xFFC770F0),
                            // Color for the first part
                           fontWeight: FontWeight.w700,
@@ -253,7 +241,7 @@ class EducationInfo extends StatelessWidget {
                       TextSpan(
                         text:
                         "ollege", // The word "Skillset" with different color
-                        style: TextStyle(
+                        style: GoogleFonts.ebGaramond(
                           color: Colors.black, // Color for "Skillset"
                           fontWeight: FontWeight.w700,
                           fontSize: 35,
@@ -274,7 +262,7 @@ class EducationInfo extends StatelessWidget {
                   child: RichText(
                     text: TextSpan(
                       text: 'College: ',
-                      style: TextStyle(
+                      style: GoogleFonts.ebGaramond(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                         fontSize: 18,
@@ -282,7 +270,7 @@ class EducationInfo extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                           text: 'Gasbaria Govt College',
-                          style: TextStyle(
+                          style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),
                         ),
@@ -301,7 +289,7 @@ class EducationInfo extends StatelessWidget {
                   child: RichText(
                     text: TextSpan(
                       text: 'Session: ',
-                      style: TextStyle(
+                      style: GoogleFonts.ebGaramond(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                         fontSize: 18,
@@ -309,7 +297,7 @@ class EducationInfo extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                           text: '2018-2020',
-                          style: TextStyle(
+                          style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),
                         ),
@@ -324,7 +312,7 @@ class EducationInfo extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: "S", // Text before "Skillset"
-                        style: TextStyle(
+                        style: GoogleFonts.ebGaramond(
                           color: Color(0xFFC770F0),
                           // Color for the first part
                           fontWeight: FontWeight.w700,
@@ -334,7 +322,7 @@ class EducationInfo extends StatelessWidget {
                       TextSpan(
                         text:
                         "chool", // The word "Skillset" with different color
-                        style: TextStyle(
+                        style: GoogleFonts.ebGaramond(
                           color: Colors.black, // Color for "Skillset"
                           fontWeight: FontWeight.w700,
                           fontSize: 35,
@@ -355,7 +343,7 @@ class EducationInfo extends StatelessWidget {
                   child: RichText(
                     text: TextSpan(
                       text: 'School: ',
-                      style: TextStyle(
+                      style: GoogleFonts.ebGaramond(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                         fontSize: 18,
@@ -363,7 +351,7 @@ class EducationInfo extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                           text: 'Hasondondi M.L High School',
-                          style: TextStyle(
+                          style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),
                         ),
@@ -382,7 +370,7 @@ class EducationInfo extends StatelessWidget {
                   child: RichText(
                     text: TextSpan(
                       text: 'Session: ',
-                      style: TextStyle(
+                      style: GoogleFonts.ebGaramond(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                         fontSize: 18,
@@ -390,7 +378,7 @@ class EducationInfo extends StatelessWidget {
                       children: <TextSpan>[
                         TextSpan(
                           text: '2016-2017',
-                          style: TextStyle(
+                          style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),
                         ),

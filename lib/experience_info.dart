@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ExperienceInfo extends StatelessWidget {
   const ExperienceInfo({super.key});
@@ -8,13 +9,13 @@ class ExperienceInfo extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          width: 550,
-          height: 590,
+          width: 400,
+          height: 645,
           padding: EdgeInsets.all(30),
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
-            border: Border.all(width: 2, color: Colors.blue),
-            borderRadius: BorderRadius.circular(20),
+            // border: Border.all(width: 2, color: Colors.blue),
+            // borderRadius: BorderRadius.circular(20),
             color: Colors.white,
           ),
           child: SingleChildScrollView(
@@ -23,16 +24,16 @@ class ExperienceInfo extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
                         child: Image.asset(
                           "Assets/images/profile.jpg",
-                          height: 150,
-                          width: 150,
+                          height: 130,
+                          width: 130,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -42,37 +43,23 @@ class ExperienceInfo extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             "Akram Hossain",
-                            style: TextStyle(
+                            style: GoogleFonts.updock(
                                 fontSize: 40,
                                 fontWeight: FontWeight.bold,
-                                letterSpacing: 2),
-                          ),
-                          Text(
-                            "akramhossain.5204@gmail.com",
-                            style: TextStyle(
-                              fontSize: 17,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          Text(
-                            "+8801747130414",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
+                                letterSpacing: 4),
                           ),
                         ],
                       )
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
+                SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     children: [
                       TextSpan(
                         text: "E", // Text before "Skillset"
-                        style: TextStyle(
+                        style: GoogleFonts.ebGaramond(
                           color: Color(0xFFC770F0),
                           // Color for the first part
                           fontWeight: FontWeight.w700,
@@ -82,7 +69,7 @@ class ExperienceInfo extends StatelessWidget {
                       TextSpan(
                         text:
                             "xperience", // The word "Skillset" with different color
-                        style: TextStyle(
+                        style: GoogleFonts.ebGaramond(
                           color: Colors.black, // Color for "Skillset"
                           fontWeight: FontWeight.w700,
                           fontSize: 35,
@@ -93,8 +80,9 @@ class ExperienceInfo extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
+                  scrollDirection: Axis.vertical,
                   child: Container(
+                    width: 360,
                     padding: EdgeInsets.all(20),
                     margin: EdgeInsets.symmetric(
                         vertical: 5), // Spacing between boxes
@@ -102,32 +90,32 @@ class ExperienceInfo extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                       border: Border.all(width: 2, color: Color(0xFFE4D3A2)),
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(20.0),
+                          borderRadius: BorderRadius.circular(15.0),
                           child: Image.asset(
                             "Assets/images/mern.png",
                             height: 120,
-                            width: 130,
-                            fit: BoxFit.contain,
+                            width: 180,
+                            fit: BoxFit.cover,
                           ),
                         ),
-                        SizedBox(width: 25),
+                        SizedBox(height: 15),
                         Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Text(
                               "MERN STACK",
-                              style: TextStyle(
+                              style: GoogleFonts.ebGaramond(
                                   fontSize: 25,
                                   fontWeight: FontWeight.bold,
                                   letterSpacing: 2),
                             ),
                             Text(
-                              "2+ years of experience of Mern Stack",
-                              style: TextStyle(
+                              "Code the Future with Full-Stack Innovation.",
+                              style: GoogleFonts.ebGaramond(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -139,8 +127,9 @@ class ExperienceInfo extends StatelessWidget {
                   ),
                 ),
                 SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
+                  scrollDirection: Axis.vertical,
                   child: Container(
+                    width: 360,
                     padding: EdgeInsets.all(20),
                     margin: EdgeInsets.symmetric(
                         vertical: 5), // Spacing between boxes
@@ -148,32 +137,33 @@ class ExperienceInfo extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                       border: Border.all(width: 2, color: Color(0xFFE4D3A2)),
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(20.0),
+                          borderRadius: BorderRadius.circular(15.0),
                           child: Image.asset(
                             "Assets/images/esports.png",
-                            height: 120,
-                            width: 130,
+                            height: 110,
+                            width: 170,
+                            color: Colors.blueGrey,
                             fit: BoxFit.contain,
                           ),
                         ),
-                        SizedBox(width: 25),
+                        SizedBox(height: 15),
                         Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Text(
                               "ESPORTS",
-                              style: TextStyle(
+                              style: GoogleFonts.ebGaramond(
                                   fontSize: 25,
                                   fontWeight: FontWeight.bold,
                                   letterSpacing: 2),
                             ),
                             Text(
-                              "2+ years of experience of Mern Stack",
-                              style: TextStyle(
+                              "Level Up Your Skills, Rule the Esports Arena",
+                              style: GoogleFonts.ebGaramond(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -185,8 +175,9 @@ class ExperienceInfo extends StatelessWidget {
                   ),
                 ),
                 SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
+                  scrollDirection: Axis.vertical,
                   child: Container(
+                    width: 360,
                     padding: EdgeInsets.all(20),
                     margin: EdgeInsets.symmetric(
                         vertical: 5), // Spacing between boxes
@@ -194,32 +185,33 @@ class ExperienceInfo extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                       border: Border.all(width: 2, color: Color(0xFFE4D3A2)),
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(20.0),
+                          borderRadius: BorderRadius.circular(15.0),
                           child: Image.asset(
                             "Assets/images/code.png",
-                            height: 120,
-                            width: 130,
+                            height: 100,
+                            width: 150,
+                            color: Colors.lightGreen,
                             fit: BoxFit.contain,
                           ),
                         ),
-                        SizedBox(width: 25),
+                        SizedBox(height: 15),
                         Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Text(
-                              "CODING CONTEST",
-                              style: TextStyle(
+                              "CODING",
+                              style: GoogleFonts.ebGaramond(
                                   fontSize: 25,
                                   fontWeight: FontWeight.bold,
                                   letterSpacing: 2),
                             ),
                             Text(
-                              "2+ years of experience of Mern Stack",
-                              style: TextStyle(
+                              "Crack the Code, Conquer the Competition.",
+                              style: GoogleFonts.ebGaramond(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -230,6 +222,7 @@ class ExperienceInfo extends StatelessWidget {
                     ),
                   ),
                 ),
+
               ],
             ),
           ),
