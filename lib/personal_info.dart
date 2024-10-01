@@ -97,7 +97,7 @@ class PersonalInfo extends StatelessWidget {
                       ),
                       children: <TextSpan>[
                         TextSpan(
-                          text: '11/05/2002',
+                          text: '01/01/2000',
                           style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),

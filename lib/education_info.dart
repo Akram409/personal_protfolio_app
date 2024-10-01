@@ -215,7 +215,7 @@ class EducationInfo extends StatelessWidget {
                       ),
                       children: <TextSpan>[
                         TextSpan(
-                          text: '2024',
+                          text: '2025',
                           style: GoogleFonts.ebGaramond(
                             fontWeight: FontWeight.normal,
                           ),
