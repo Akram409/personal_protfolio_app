@@ -2,6 +2,12 @@
 
 This is my personal portfolio app built with Flutter. Below are some demo images of the app and a YouTube video demo.
 
+## Video Demo
+
+You can also check out the video demo of the app on YouTube:  
+[Watch the demo on YouTube](https://youtu.be/SdLZZNtxBmE?si=UreJHXjlBPxglStV)
+
+
 ## Android App Demo
 
 ### Hero and Welcome Section
@@ -39,7 +45,3 @@ This is my personal portfolio app built with Flutter. Below are some demo images
   <img src="https://i.ibb.co/R9JVJfQ/d4.png" alt="Detail 4" width="400" height="645" />
 </div>
 
-## Video Demo
-
-You can also check out the video demo of the app on YouTube:  
-[Watch the demo on YouTube](https://youtu.be/SdLZZNtxBmE?si=UreJHXjlBPxglStV)
